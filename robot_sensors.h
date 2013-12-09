@@ -1,3 +1,4 @@
+#include <msp430.h>
 /*
  * robot_sensors.h
  *
@@ -9,6 +10,8 @@
 #define ROBOT_SENSORS_H_
 
 void InitializeADC10();
+
+void InitializeLEDPins();
 
 
 #endif /* ROBOT_SENSORS_H_ */
