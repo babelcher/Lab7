@@ -9,10 +9,10 @@
  */
 
 void InitializeADC10() {
-	ADC10CTL0 = ADC10SHT_3 + ADC10ON + ADC10IE; // ADC10ON, interrupt enabled
+	ADC10CTL0 |= ADC10SHT_3 + ADC10ON + ADC10IE; // ADC10ON, interrupt enabled
 	ADC10CTL1 |= ADC10SSEL1 | ADC10SSEL0;                // Select SMCLK
 	ADC10AE0 |= BIT3|BIT4|BIT5;
-
+	ADC10CTL1 |= ADC10DIV_7;
 }
 
 unsigned int LeftSensorReading() {
