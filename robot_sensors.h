@@ -8,6 +8,7 @@
 #ifndef ROBOT_SENSORS_H_
 #define ROBOT_SENSORS_H_
 
+void InitializeADC10();
 
 
 #endif /* ROBOT_SENSORS_H_ */
