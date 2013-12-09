@@ -11,7 +11,9 @@
 
 void InitializeADC10();
 
-void InitializeLEDPins();
+unsigned int LeftSensorReading();
+
+unsigned int RightSensorReading();
 
 
 #endif /* ROBOT_SENSORS_H_ */

@@ -7,6 +7,8 @@
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 	
-    InitializeLEDPins();
+    P1DIR |= BIT0;
+    P1DIR |= BIT6;
+
 	return 0;
 }
